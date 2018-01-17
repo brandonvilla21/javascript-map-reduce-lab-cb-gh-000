@@ -9025,7 +9025,7 @@ const nonAutomaticIssues = issues.reduce( (prevIssues, nextIssue) => {
         : prevIssues
 }, [])
 
-const table = document.findElementById('results').innerHTML;
+const table = document.findElementById('results');
 
 table = nonAutomaticIssues.map( issue => {
   return `
